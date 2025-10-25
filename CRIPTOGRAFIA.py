@@ -29,7 +29,7 @@ def descriptografar(texto_b64):
     iv, cifrado = dados[:16], dados[16:]
     cipher = AES.new(chave, AES.MODE_CBC, iv)
     return unpad(cipher.decrypt(cifrado), AES.block_size).decode()
-
+"""
 # Loop principal para interface interativa com usuário
 while True:
     texto = input("Digite texto para criptografar (ou 'sair' para encerrar): ")
@@ -45,4 +45,6 @@ while True:
         original = descriptografar(cifrado)
         print(f"Original: {original}")
     else:
+
         print("Texto vazio!")
+"""
